@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Math Fact Games</title>
+
+<link rel="stylesheet" href="../cssstyle/normalize.css" >
+<link rel="stylesheet" href="../cssstyle/math-fact.css">
+
+<script src="https://kit.fontawesome.com/a411e5b130.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header-on">
+        <nav>
+            
+            <div id="menu-icon">
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            
+            <a href="../index.html" id="Play2Learn-logo"><img src="../logoproject.png" id="play2learn-logo-image" alt="play2learn" ></a>
+            <div class="nav-top">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                  
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="main-container">
+            <div id="tp-container"  >
+                <h1 id="game-head">Maths Facts Practice</h1>
+                <form id="my-form" method="post"  novalidate >
+                    <label id="sel" for="menuPad">Operation</label>
+                    <select name="menuPad" id="menuPad" required>
+                        <option value="0" >--Please Choose--</option> <!--should ask to select one option-->
+                        <option name="addition" id="add"  value="+" >Addition</option>
+                        <option name="subtraction" id="subtract"  value="-" >Subtraction</option>
+                        <option name="multiplication" id="multiply" value="*" >Multiplication</option>
+                        <option name="division" id="divide" value="/" >Division</option>
+                    </select>
+                    
+                    <button id="play-button">Play</button>
+                </form>
+                <div id="list">
+                    <ol>
+                        <li>Select operation.</li>
+                        <li>Press <strong>Play</strong>.</li>
+                        <li>How many problems can you solve in 30 seconds?</li>
+                    </ol>
+                </div>                
+            </div>
+
+            <div id="game-container" style="display: none;" >
+                <div id="game-change"> 
+                    <h2 id="game-head">Maths Facts Practice</h2>
+                    <div id="count">
+                    <!--timer and score tab-->
+                    <div id="game-timer" > Time <p> 3000 </p></div>
+                    <!--<div id="game-timer" > Time <p> 30 </p></div>-->
+                        <div id="score-container"> Score <p>0</p></div>
+                    </div>
+                    
+                    <div id="question"></div><!--question tab-->
+                    <p id="ans"></p><!-- user answer correct /wrong showing-->
+                    <div class="row1"><!-- user answer typing tab-->
+                        <input type="text" id="answer" placeholder="Your Answer">
+                    </div>
+                    <p id="press-enter">"Press<span style="font-weight: bold;"> Enter</span> to check answer"</p>
+                    <P id="div-format" style="display: none;">Answer should be rounded to first decimal like 0.4,1.0,2.3,etc. </P>
+                    <div class="numbers-button">
+                    
+                        <div class="row">
+                            <button  class="btn">1</button>
+                            <button class="btn">2</button>
+                            <button class="btn">3</button>
+                        </div>
+                        <div class="row">
+                            <button class="btn">4</button>
+                            <button class="btn">5</button>
+                            <button class="btn">6</button>
+                        </div>
+                        <div class="row">
+                            <button class="btn">7</button>
+                            <button class="btn">8</button>
+                            <button class="btn">9</button>
+                        </div>                
+                        <div class="row">
+                            <button class="btn">0</button>
+                            <button class="btn">.</button>
+                            <button class="btn">-</button>                    
+                        </div>
+                        <div class="row">
+                            <button  id="clear-button" onclick="clearUserInput()">clear</button>
+                            <button id="back-button" onclick="restartGame()"> Back </button>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        
+                
+                <div id="result" style="display: none;">
+                    <h2 id="game-head">Maths Facts Practice</h2>
+                    <div class="demo" style="text-transform: uppercase; font-weight: bold;"><span class="output"></span></div> <!-- bring heading in game page-->
+                    <p id="myp1" >Times up!</p> 
+                    <p id="myP" ></p>
+                    <button id="btn-4" onclick="restartGame()" >Play Again</button>            
+            </div>
+        </div>
+    </main>
+    <footer >
+        <div id="footer">
+            <p>&copy; 2025 Play2Learn</p>
+            <address id="media">
+                <a href="../contact-us.html" ><i class="fa-sharp fa-solid fa-square-envelope"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+
+            </address>
+        </div>
+    </footer>
+  <script src="../scriptjs/math-fact.js"></script>
+  <script src="../scriptjs/toggle.js"></script>
+
+</body>
+</html>

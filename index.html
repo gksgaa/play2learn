@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Play2Learn</title>
+
+
+<link rel="stylesheet" href="cssstyle/normalize.css" >
+<link rel="stylesheet" href="cssstyle/style1.css">
+<script src="https://kit.fontawesome.com/a411e5b130.js" crossorigin="anonymous"></script>
+
+<script>
+const quote = [
+  "\"Exactly what i was looking to play and gain knowledge!\"",
+  "\"Interesting and enjoyable site.Fun and safe environment for kids.\"",
+  "\"It has great games for your brain working and fun of course.\"",
+];
+const name = [
+"Sara Williams","Lisa Robert","Kelly"
+];
+
+function quoteChange() {
+  let q = 0;
+  let p = 1;
+  setInterval(function () {
+    q = (q+1) % quote.length;
+    document.getElementById('quote1').innerHTML = quote[q];
+    document.getElementById('person1').innerHTML = name[p];
+    p = (p+1) % name.length;
+  }, 5000);
+}
+
+window.addEventListener('load', quoteChange());
+</script>
+</head>
+
+<body>
+    <header >
+        <nav>
+            
+            <div id="menu-icon">
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            
+            <a href="index.html" id="Play2Learn-logo"><img src="logoproject.png" id="play2learn-logo-image" alt="play2learn" ></a>
+            <div class="nav-top">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main-body">
+        <section class="quotes">
+            <h2>Happy clients say...</h2>
+            <div class="changing-quotes">
+                <p><span id="quote1">"It is a great website to learn and play.This is a wonderful easy to use games for kids to play and have fun."</span></p>
+                <p class="person"><span id="person1">Greg Watson</span></p>
+            </div>
+        </section>
+        <section class="container">
+            <div class="learning-games">
+                    <div class="text">
+                        <h2>Math Facts Game</h2>
+                        <p>A fun,adaptive approach to math fact mastery.</p>
+                        <a  href="games/math-facts.html"><strong>Play Game</strong></a>  
+                    </div>
+               
+            </div>
+        </section>
+    </main>
+   
+
+    <footer >
+        <div id="footer">
+            <p>&copy; 2025 Play2Learn</p>
+            <address id="media">
+                <a href="contact-us.html" ><i class="fa-sharp fa-solid fa-square-envelope"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+
+            </address>
+        </div>
+    </footer>
+    
+    <script src="scriptjs/toggle.js"></script>   
+</body>
+</html>

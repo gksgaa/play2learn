@@ -1,0 +1,1084 @@
+/****************************** Play2Learn *********************************
+   ========================================================================*/
+
+
+/********************** Table of styling Contents****************************
+
+ 1. index page
+ 2.sub page 
+ 3.Media Queries
+
+*****************************************************************************/
+
+/****************
+index page style 
+*****************/
+
+*{
+    box-sizing: border-box;
+    font-weight: 400;  
+   
+}
+html {
+    font-size: 16px;
+}
+body {
+    background-size: cover;
+    font: 1rem/1.3 Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-top ul li a{
+  text-transform: capitalize;
+}
+nav img {
+  float: left;
+  height:120px;
+  width: 300px;
+}
+nav {
+    background-color: white;
+    border: solid white 0.1rem;
+    /*border: solid rgb(110, 78, 226) 0.1rem;*/
+    margin: -0.5rem -0.5rem -1rem;      
+}
+nav ul {
+    list-style: none;
+    margin: 1;
+    padding: 0;
+    float: right;
+}
+nav li {
+    float: left;
+    padding: 9px 12px;
+}
+.nav-top li :hover{
+  border: solid white 0.1rem ;
+  border-radius: 1rem;
+  color: black;
+}
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+} 
+nav a:active {
+    color: red;
+}
+#game-type ul {
+    background: white;
+    display: none;
+    position: absolute;
+    border: solid white 0.1rem;
+}
+.drop-down li {
+    float: none;
+    font-size: 0.9rem;
+}
+#game-type:hover .drop-down {
+    display: block;   
+}
+/*footer*/
+footer {
+  font-size: medium;
+  font-style: italic;
+  min-width: 640px;
+  width: 100%;
+  margin: 0 -1rem;
+  padding: 0.2rem 1rem;
+  position:relative;
+  bottom: 0;
+}
+footer p{
+
+    margin-left: 3px;
+    padding-left: 5px;
+    float:left;
+}
+footer a {
+  margin: 0.75rem;
+  font-size: large;
+  
+}
+#media {
+    background: white;
+    margin: 1rem;
+    padding: .5rem 1rem;
+    text-align: right;
+}
+#media a :hover{
+  color:rgb(193, 83, 24);
+}
+.drop-down{
+    top: 80px;
+    background: #F4F6F9;
+    box-shadow: 0px 16px 64px 0px rgba(12, 14, 25, 0.12), 0px 0px 12px 0px rgba(12, 14, 25, 0.08);
+    border-radius: 20px;
+    padding: 4px;
+    min-width: 200px;
+    display: block;
+}
+.drop-down li{
+  margin: 0 0 2px 0;
+}
+.drop-down a {
+  border-radius: 20px 20px 5px 5px;
+  padding: 14px 20px;
+  display: block;
+  color: #697089;
+  font-family: 'Inter';
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: normal;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+  text-align: left;
+  letter-spacing: 0.01em;
+}
+main{
+  min-height: 200px;
+  overflow: hidden;
+  flex:1 0 auto;
+}
+/*quotes change */
+.quotes{
+    width:95%;
+    max-width:1160px;
+    margin:100px; 
+}
+.quotes h2{
+    color: #c122be;
+    font-weight:500;
+}
+span#quote1{
+    color: rgb(49, 18, 176);
+    font-weight: bolder;
+}
+span#person1{
+    font-weight: bolder;
+    color: rgb(127, 72, 14); 
+}
+.person {
+    text-align: center;
+    justify-content: center;
+}
+/*  game section css*/
+strong{
+    font-weight: 700;
+}
+a:link{
+    text-decoration: none;
+}
+.container{
+    max-width: 1158px;
+    padding:0;
+    overflow:visible;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    margin:0 auto;
+}
+
+.learning-games{
+    width: 100%;
+    min-height: 228px;
+    background-color: wheat;
+    border-radius: 36px;
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    margin-bottom: 120px;
+    position: relative;
+    z-index: 1;
+}
+.learning-games .text{
+    padding-left: 0;
+    max-width: 365px;
+    margin: 0 auto;
+}
+.learning-games .text p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: rgb(195, 38, 3);
+    margin-bottom: 24px;
+}
+.learning-games .math-facts{
+    border-right: 1px solid #170404;
+    padding: 18px 0px;
+    width:50%;
+}
+.anagram-hunt{
+    width:50%;
+}
+.learning-games .text h2{
+    display: flex;
+    justify-content: center;   
+}
+.learning-games  .text > a {
+    width: 122px;
+    height: 48px;
+    background: linear-gradient(141.82deg, #FF0000 -52.55%, #FF7700 70.34%);
+    box-shadow: 0px 2px 0px rgba(12, 14, 25, 0.16);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/*******************************
+sub page --- about.html
+********************************/
+
+
+
+.footer {
+  font-size: medium;
+  font-style: italic;
+  min-width: 640px;
+  width: 100%;
+  margin: 1 -1rem;
+  padding: 0.2rem 1rem;
+  position:fixed;
+  bottom: 0;
+}
+.page-title {
+  padding-bottom: 0;
+  border-bottom: 4px solid lightcoral;
+}
+.content{
+  margin-top: 3rem;
+}
+.container-page-title{
+  z-index: 10;
+  max-width: 910px;
+  margin: 4rem auto 0;
+  position: relative;
+  width: 100%;
+  padding-left: 85px;
+  padding-right: 85px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+#h-1{
+  text-shadow: none;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  text-align: center;
+  letter-spacing: -0.08em;
+  color: #d70cdb;
+  margin: 0 auto 36px;
+  text-transform: none;
+}
+.container a{
+  color: blue;
+}
+.container p{
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/******************************
+sub page contact-us.html
+
+*******************************/
+
+
+.form-contact {
+  width: 800px;
+  margin: 20px auto;
+  padding: 70px;
+  border: 2px ;
+  border-radius: 20px;
+  background: rgb(154, 184, 145);
+}
+.contact {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 5px 0px;
+  padding: 8px;
+}
+.contact-form {
+  box-sizing: border-box;
+  font-size: large;
+  padding: 8px;
+  width: 100%;
+}
+.contact-text{
+  box-sizing: border-box;
+  font-size: large;
+  padding: 35px;
+  width: 100%;
+}
+#btn1{
+  background: rgb(17, 56, 17);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+.b-footer{
+  font-size: medium;
+  font-style: italic;
+  min-width: 640px;
+  width: 100%;
+  margin: 1 -1rem;
+  padding: 0.2rem 1rem;
+  position:relative;
+  bottom: 0;
+}
+.error {
+  background-color: rgba(255, 0, 0, .1);
+  border-radius: 5px 5px 0 0;
+  box-sizing: border-box;
+  color: #f00;
+  display: block;
+  font-size: 80%;
+  font-weight: bold;
+  padding: 3px;
+  width: 100%;
+}
+
+/******************************
+sub page login.html
+
+*******************************/
+
+
+.login-form{
+  background-color: lightblue;
+  min-width: 500px;
+  min-height: 500px;
+}
+.l-footer{
+  font-size: medium;
+  font-style: italic;
+  min-width: 640px;
+  width: 100%;
+  margin: 1 -1rem;
+  padding: 0.2rem 1rem;
+  position:relative;
+  bottom: 0;
+}
+.form-login {
+  width: 800px;
+  margin: 5px auto;
+  padding: 7px; 
+  display: block;
+  justify-content: center;
+  align-items: center;   
+  
+}
+#heading {
+  font-weight: 500;
+  font-size: 2.25rem;
+  margin-bottom: 0.95rem;
+  margin-top: 0.95rem;
+  padding-bottom: 5px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+#fpw{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-decoration: underline;
+}
+.log-form {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  /*
+  margin: 5px 0px;
+  padding: 14px;
+  */
+}
+.log-form1 {
+  box-sizing: border-box;
+  font-size: larger;
+  padding: 8px;
+  width: 100%;
+}
+
+/*
+label {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 5px 0px;
+  padding: 16px;
+}
+input {
+  box-sizing: border-box;
+  font-size: larger;
+  padding: 8px;
+  width: 100%;
+}
+*/
+.login-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .95rem auto;
+}
+.log-btn{
+  min-height: 3.75rem;
+  padding: 0 3.5rem 0 3.5rem;
+  color: white;
+  border-width: 0.2rem;
+  border-color: black;
+  text-align: center;
+  background-color:  rgba(0, 64, 89, .6);
+  border-radius: 624rem;
+  height:2.75rem;
+  font-size:2rem;  
+}
+#register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .95rem auto;
+}
+/*
+background-color: rgba(0, 64, 89, .6);
+  position:relative;
+  bottom: 0;
+}
+*/
+
+/******************************
+sub page register.html
+
+*******************************/
+.register-form{
+  background-color: lightblue;
+  min-width: 500px;
+  min-height: 500px;
+}
+.reg-wrapper {
+  width: 800px;
+  margin: 5px auto;
+  padding: 7px; 
+  display: block;
+  justify-content: center;
+  align-items: center;  
+}
+#heading1 {
+  font-weight: 500;
+  font-size: 2.25rem;
+  margin-bottom: 0.95rem;
+  margin-top: 0.95rem;
+  padding-bottom: 5px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+.fl-wrap {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  /*margin: 5px 0px;
+  padding: 14px;*/
+  margin: 0;
+  padding: 0;
+}
+.fi-wrap {
+  box-sizing: border-box;
+  font-size: larger;
+  padding: 8px;
+  width: 100%;
+}
+.reg-btn{
+  min-height: 3.75rem;
+  padding: 0 3.5rem 0 3.5rem;
+  color: white;
+  border-width: 0.2rem;
+  border-color: black;
+  text-align: center;
+  background-color:  rgba(0, 64, 89, .6);
+  border-radius: 624rem;
+  height:2.75rem;
+  font-size:2rem;  
+}
+.register-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .95rem auto;
+}
+
+#referral{
+  box-sizing: border-box;
+  font-size: large;
+  padding: 5px;
+  width: 30%;
+}
+.t-wrap{
+  box-sizing: border-box;
+  font-size: large;
+  padding-top: 25px ;
+  padding-bottom: 35px;
+  width: 100%;
+  margin: auto;
+}
+#cb-wrap{
+  padding:5px;
+  width: 100%;
+}
+
+/*************
+Breakpoints
+*************/
+
+
+@media (max-width: 600px) {
+
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      
+      nav ul li {
+        flex: 1;
+        height: 2.3rem;
+        z-index: 10;
+      }
+      
+      nav ul li>a {
+       
+        color: black;
+        display: block;
+        padding: 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      
+      nav ul li>a:hover {
+        background: rgb(220, 220, 0);
+      }
+      
+      nav ul li>a:active {
+        color: red;
+      }
+      
+      nav ul li#game-type>ul {
+        display: inline-block;
+        flex-direction: row;
+        visibility: hidden;
+        
+      }
+      
+      nav ul li#game-type:hover>ul {
+        visibility: visible;
+        
+      }
+      .drop-down{
+        /*
+        top: 80px;
+        padding: 4px;
+        */
+        min-width: 100px;
+        display: block;
+        border: none;
+    }
+    .drop-down li{
+      margin: 0;
+    }
+    
+    .drop-down a {
+      display: block;
+      font-family: 'Inter';
+      font-size: 0.9rem;
+      font-weight: 200;
+      line-height: normal;
+      border: none;
+      text-align: left;
+      letter-spacing: 0.01em;
+    }
+    #game-type ul {
+        display: none; 
+        border: none;
+    }
+      
+      /*** break point ***/
+     
+    nav #menu-icon {
+      background: rgb(220, 220, 0);
+      color: black;
+      cursor: pointer;
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 0.5rem;
+      
+    }
+   
+    
+.nav-top {
+    
+    display: flex;
+    flex-direction: column;
+    padding: auto 1em;
+    row-gap: 2rem;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+  
+    nav ul {
+      flex-direction:column;
+      
+    }
+  
+    nav ul li.contains ul {
+      display: none;
+    }
+
+  
+
+  
+    
+  }
+  
+
+/***************
+ media queries
+ **************/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        overflow-x:hidden;
+    }
+    main{
+        width: 100%;
+        font-size:1.2rem;
+    }
+    
+    .quotes{
+        width: 70vw;
+        height: 23vw;
+    }
+    .quotes p:first-of-type {
+        top: 0;
+      }
+      .quotes p:first-of-type {
+        top: 0;
+        font-size: 0.9rem;
+      }
+    .quotes p:nth-of-type(2) {
+        font-size: 0.9rem;
+        margin: auto;
+        width: 70vw;
+        text-align: left;
+        left: initial;
+        right: 10vw;
+    }
+    .person {
+        margin-left: 1rem;
+        top: 1vw;
+      }
+      article h2 {
+        font-size: medium;
+        margin-bottom: 0.5rem;
+      }
+      article p{
+        font-size:medium;
+        width: auto;
+        
+      }
+      .learning-games{
+        width: 100%;
+      }
+      
+      .anagram-hunt .bt-1,
+      .math-facts .bt-1 {
+        display: block; 
+      }
+      
+      .anagram-hunt
+      .math-facts {
+        width: 20vw;
+      }
+      #media{
+        text-align: center;
+      }
+      #play2learn-logo{
+        display: none;
+      }
+      #play2learn-logo-image{
+        display: none;
+      }
+      /*about us page */
+      .content p{
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 0.2rem;
+      }
+        /* contact us page*/
+  
+  .form-contact {
+    width: 80%;
+    margin: 50px auto;
+    padding: 40px;
+    border: 2px ;
+    border-radius: 10px;
+    background: rgb(154, 184, 145);
+  }
+  
+  /* login form*/
+  .form-login{
+    width: 80%;
+}
+.log-form , .log-form1{
+  font-size: small;
+}
+#heading{
+  font-size: large;
+  font-weight: bold;
+}
+
+/*register form*/
+.reg-wrapper{
+  width: 80%;
+}
+.fl-wrap{
+  font-size: small;
+}
+.fi-wrap{
+  font-size: small;
+}
+#heading1{
+  font-size: large;
+  font-weight: bold;
+}
+
+
+
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+    main{
+        width: 100%;
+        font-size:1rem;
+    }
+    #menu-icon{
+        display: none;
+    }
+    .quotes{
+        width: 80vw;
+        height: 23vw;
+    }
+    .quotes p:first-of-type {
+        top: 0;
+      }
+      .quotes p:first-of-type {
+        top: 0;
+        font-size: 0.9rem;
+      }
+    .quotes p:nth-of-type(2) {
+        font-size: 0.9rem;
+        margin: 1vw auto 0;
+        width: 70vw;
+        text-align: left;
+        left: initial;
+        right: 10vw;
+    }
+    .person {
+        margin-left: 1rem;
+        top: 1vw;
+      }
+      article h2 {
+        margin-bottom: 0.5rem;
+      }
+      article p{
+        font-size:0.6rem;
+        width:auto;
+      }
+      .learning-games{
+        width: 100%;
+      }
+      .anagram-hunt .bt-1,
+      .math-facts .bt-1 {
+        display: block; 
+      }
+      
+      .anagram-hunt
+      .math-facts {
+        width: 20vw;
+      }
+      /*about us page */
+      .content p{
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 0.2rem;
+      }
+      /* contact us form */
+      .form-contact {
+        width: 80%;
+        margin: 50px auto;
+        padding: 40px;
+        border: 2px ;
+        border-radius: 10px;
+        background: rgb(154, 184, 145);
+      } 
+      
+  /* login form*/
+  
+  .form-login{
+    width: 100%;
+}
+.reg-wrapper{
+  width: 80%;
+}
+
+      
+      
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    main{
+        width: 100%;
+        font-size:1rem;
+    }
+    #menu-icon{
+        display: none;
+    }
+    .quotes{
+        width: 83vw;
+        height: 23vw;
+    }
+    .quotes p:first-of-type {
+        top: 0;
+      }
+      .quotes p:first-of-type {
+        top: 0;
+        font-size: 0.9rem;
+      }
+    .quotes p:nth-of-type(2) {
+        font-size: 0.9rem;
+        margin: 1vw auto 0;
+        width: 70vw;
+        text-align: left;
+        left: initial;
+        right: 10vw;
+    }
+    .person {
+        margin-left: 1rem;
+        top: 1vw;
+      }
+      article h2 {
+        margin-bottom: 1.75rem;
+      }
+      article p{
+        width:auto;
+      }
+      .learning-games{
+        width: 100%;
+      }
+      .anagram-hunt .bt-1,
+      .math-facts .bt-1 {
+        display: block; 
+      }
+      article {
+        height: 30vw;
+      }
+      .anagram-hunt
+      .math-facts {
+        width: 30vw;
+      }
+      .form-contact {
+        width: 800px;
+        margin: 20px auto;
+        padding: 70px;
+        border: 2px ;
+        border-radius: 20px;
+        background: rgb(154, 184, 145);
+      }
+      .form-login {
+        width: 800px;
+        margin: 5px auto;
+        padding: 7px; 
+        display: block;
+        justify-content: center;
+        align-items: center;   
+        
+    }
+    .reg-wrapper {
+      width: 800px;
+      margin: 5px auto;
+      padding: 7px; 
+      display: block;
+      justify-content: center;
+      align-items: center;  
+    }
+
+} 
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    main{
+        width:100%;
+        font-size: 0.9rem;
+    } 
+    #menu-icon{
+        display: none;
+    } 
+    .quotes{
+        width: 83vw;
+        height: 13vw;
+    }
+    .quotes p:first-of-type {
+        top: 0;
+      }
+    .quotes p:nth-of-type(2) {
+        margin: 1vw auto 0;
+        width: 70vw;
+        text-align: left;
+        left: initial;
+        right: 10vw;
+    }
+    .person {
+        margin-left: 1rem;
+        top: 1vw;
+      }
+    
+      article h2 {
+        margin-bottom: 1.75rem;
+      }
+    
+      .anagram-hunt .bt-1,
+      .math-facts .bt-1 {
+        display: block;
+        margin-top: .5rem;
+        padding: .5rem;
+      }
+    
+      article {
+        height: 30vw;
+      }
+    
+      .anagram-hunt
+      .math-facts {
+        width: 30vw;
+      }
+
+      .form-contact {
+        width: 800px;
+        margin: 20px auto;
+        padding: 70px;
+        border: 2px ;
+        border-radius: 20px;
+        background: rgb(154, 184, 145);
+      }
+      .form-login {
+        width: 800px;
+        margin: 5px auto;
+        padding: 7px; 
+        display: block;
+        justify-content: center;
+        align-items: center;   
+        
+    }
+    .reg-wrapper {
+      width: 800px;
+      margin: 5px auto;
+      padding: 7px; 
+      display: block;
+      justify-content: center;
+      align-items: center;  
+    }
+
+} 
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+    .quotes {
+        width: 80vw;
+        height: 10vw;
+      }
+      #menu-icon{
+        display: none;
+    }
+    
+      .person {
+        top: 0;
+        margin-left: 1rem;
+      }
+    
+      .anagram-hunt .bt-1,
+      .math-facts .bt-1 {
+        display: block;
+        margin-top: .9rem;
+        padding: .9rem;
+      }
+    
+      article {
+        height: 24vw
+      }
+    
+      article h2 {
+        font-size: medium;
+      }
+    
+      .anagram-hunt,
+      .math-facts {
+        width: 27vw;
+      }
+      .form-contact {
+        width: 800px;
+        margin: 20px auto;
+        padding: 70px;
+        border: 2px ;
+        border-radius: 20px;
+        background: rgb(154, 184, 145);
+      }
+      .form-login {
+        width: 800px;
+        margin: 5px auto;
+        padding: 7px; 
+        display: block;
+        justify-content: center;
+        align-items: center;   
+        
+    }
+    
+}

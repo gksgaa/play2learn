@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Play2Learn:contact-us form</title>
+
+<link rel="stylesheet" href="cssstyle/normalize.css" >
+<link rel="stylesheet" href="cssstyle/style1.css">
+
+
+<script src="https://kit.fontawesome.com/a411e5b130.js" crossorigin="anonymous"></script>
+<script src="contact.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="menu-icon">
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <a href="index.html" id="play2learn-logo"><img src="logoproject.png"  id="play2learn-logo-image" alt="play2learn" ></a>
+        <div class="nav-top">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="game-type">
+                    <a href="games/math-facts.html">Game</a>
+                    
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-contact">
+        <form id="my-form" method="post" novalidate>
+            <h1 >Connect with Us!</h1>
+                <label for="username" class="contact">Name*</label>
+                <input type="text" id="username"  name="username" class="contact-form" placeholder="Enter your Name" minlength="5" maxlength="25"  required >
+           
+                <label for="email" class="contact" >Email*</label>
+                <input type="email" id="email" name="email" class="contact-form" placeholder="your-email" required>
+
+                <label for="message" class="contact">Message*</label>
+                <textarea id="message" name="message" class="contact-form" minlength="10" maxlength="500" placeholder="Enter your message here" required></textarea>
+
+                <button type="submit" id="btn1" class="btn">Send Message</button>
+        </form>
+    </div>
+    </main>
+
+    <footer class="b-footer">   
+        <p>&copy; 2025 Play2Learn</p>
+            
+        <address id="media">
+            <a href="contact-us.html"><i class="fa-sharp fa-solid fa-square-envelope"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+
+        </address>
+    </footer>
+    <script src="scriptjs/toggle.js"></script>
+    <script src="scriptjs/contact-form-valid.js"></script>
+     
+     
+    
+</body>
+</html>
+    
