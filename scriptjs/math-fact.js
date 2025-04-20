@@ -135,8 +135,7 @@ function addError(field) {
   
   //timer 30sec --works well
   
- // let timer = 30;
-  let timer = 3000;
+  let timer = 30;
   const gameTimer = document.querySelector("#game-timer > p");
   let errorTimeout;
   let errorTimer;
@@ -151,7 +150,7 @@ function addError(field) {
   
   function updateTimer() {
     //timer = 30;
-    gameTimer.innerHTML = 3000;
+    gameTimer.innerHTML = 30;
     //gameTimer.innerHTML = 30;
     startInterval();
     timeout = setTimeout(function(e) {
@@ -160,8 +159,7 @@ function addError(field) {
       //finalScore();
       endGame();
       return timer;
-    }, 30000000000000000);
-  //}, 30000);
+  }, 30000);
   };
   
   let score = 0;
